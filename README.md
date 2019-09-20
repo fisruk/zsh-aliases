@@ -1,15 +1,16 @@
-# Aliases for faster typing
+ Aliases for faster typing
+===================
 
-##Step 1: 
+# Clone 
 ```
-git clone git@github.com:fisruk/oh-my-zsh-plugin_symfony.git ~/.aliases
+git clone git@github.com:fisruk/zsh-aliases.git ~/.aliases
 ```
 
-##Step 2: 
+# Include  
 Include and be fast as lightning
 ```
     # All files example
-    for file in ~/.aliases/*; do source $file; done
+    for file in ~/.aliases/*.sh; do source $file; done
 
     # One file example
     source ~/.aliases/docker.sh
