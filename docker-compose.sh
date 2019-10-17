@@ -1,5 +1,5 @@
 alias drc='docker-compose'
-alias drc.b='docker-compose'
+alias drc.b='docker-compose build'
 alias drc.up='docker-compose up -d'
 alias drc.sp='docker-compose stop'
 alias drc.dn='docker-compose down'
