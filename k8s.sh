@@ -16,9 +16,10 @@ function k() {
 # Get current context
 alias k.context='k config current-context'
 # List all contexts
-alias k.context:list='k config get-contexts -o name | sed "s/^/  /;\|^  $(k.current-context)$|s/ /*/"'
+alias k.context:list='k config get-contexts -o name | sed "s/^/  /;\|^  $(k.context)$|s/ /*/"'
+alias k.context:ls=k.context:list
 # Change current context
-alias k.context:change='k config use-context "$(k.current-context:list | fzf -e | sed "s/^..//")"'
+alias k.context:change='k config use-context "$(k.context:list | fzf -e | sed "s/^..//")"'
 
 # Get current namespace
 alias k.ns='k config get-contexts --no-headers "$(k.context)" | awk "{print \$5}" | sed "s/^$/default/"'
