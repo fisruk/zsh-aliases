@@ -1,5 +1,7 @@
 alias g="git"
-alias p="python3"
+alias py="python3"
+alias e="bat --theme=Dracula --color=always --style=numbers --line-range=:500"
+alias cat="bat --paging=never --theme=Dracula --color=always --line-range=:500"
 
 alias dns.cache-clear="sudo killall -HUP mDNSResponder"
 

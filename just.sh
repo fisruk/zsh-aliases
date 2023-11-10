@@ -1,13 +1,9 @@
 #—————————————————————————————————————————————————————————————————————————————————# 
 # Delay the initialization of the just completion until first j (just) call
 #—————————————————————————————————————————————————————————————————————————————————#
-function j() {
-  	source <(just --completions zsh)
-
-
-  	just $@
-}
-
+alias j="just"
+alias j.="just --choose"
+alias j.ls="just --list"
 alias j.s="just start"
 alias j.i="just install"
 alias j.b="just build"
