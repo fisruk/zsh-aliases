@@ -1,10 +1,13 @@
 alias g="git"
+alias e="nvim"
 alias p='cd "$(find ~/Documents/Projekte/* -type d -maxdepth 1 | fzf -e -d "/" --with-nth 6,7,8)"'
 alias py="python3"
 alias cat="bat --theme=Dracula --color=always --line-range=:500  --style=numbers"
-alias l="exa"
-alias ll="exa --long"
-alias tree="exa --tree"
+
+# https://the.exa.website/docs
+alias l="exa --icons"
+alias ll="exa --long --icons"
+alias tree='exa --tree --icons --ignore-glob=".git|.idea"'
 
 #—————————————————————————————————————————————————————————————————————————————————#
 # MAC OS
