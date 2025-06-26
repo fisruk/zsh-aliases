@@ -31,7 +31,9 @@ alias k.l="k logs"
 alias k.e="k exec --stdin --tty"
 alias k.a="k apply -f"
 
-alias k.failed-pods="k get pods --all-namespaces -l team=suche --field-selector=status.phase=Failed"
+alias k.failed-pods="k get pods --all-namespaces -l team=tofu --field-selector=status.phase=Failed"
+alias k.ing-list="kubectl get ing -o=custom-columns='NAMESPACE:.metadata.namespace,INGRESS-NAME:.metadata.name,PATHs:..path'"
+alias k.ing-list-all="kubectl get ing --all-namespaces -o=custom-columns='NAMESPACE:.metadata.namespace,INGRESS-NAME:.metadata.name,PATHs:..path'"
 
 #———————————————————————————#
 # Context
